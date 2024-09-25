@@ -1,0 +1,86 @@
+@import './common/AuthLayout.scss';
+@import './fonts.scss';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OpenSans';
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: gray;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 50px;    
+    margin-top: 15px;
+
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+
+}
+
+body {
+    background: #FAFAFB;
+}
+
+.product-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 400px;
+    z-index: -5;
+    border-radius: 5px;
+    max-width: 450px;
+    width: 100%;
+    background: rgb(228, 99, 12);
+    padding: 20px 15px 20px 20px;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.product-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-message.active {
+   opacity: 1;
+}
+
+

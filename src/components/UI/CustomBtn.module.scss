@@ -1,0 +1,19 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 28.5px;
+  box-shadow: 0px 10px 30px 0px rgba(254, 114, 76, 0.2);
+  background: rgb(254, 114, 76);
+  
+  a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 6px;
+  }
+  .img {
+    background: rgb(255, 255, 255);
+  }
+}

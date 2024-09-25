@@ -1,0 +1,96 @@
+.user {
+  width: 20%;
+  border-right: 1px solid rgb(212, 214, 224);
+  padding: 30px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  gap: 50px;
+  top: 0;
+  height: 100vh;
+  @media (max-width:1000px) {
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    background: white;
+    border: none;
+    border-top: 1px solid gray;
+    padding: 10px;
+    top: auto;
+    gap: 15px;
+}
+    
+
+  &_info {
+    &_img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+    }
+
+    &_name {
+      color: rgb(0, 0, 0);
+      font-family: Open Sans;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    &_email {
+      color: rgb(158, 161, 177);
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    &_span {
+      position: relative;
+      left: 110px;
+      bottom: 105px;
+      background: rgb(254, 114, 76);
+      padding: 2px 6px 3px 6.50px;
+      color: rgb(255, 255, 255);
+      font-size: 12px;
+      font-weight: 400;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+      opacity: 1;
+    }
+
+    &_link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      img {
+        width: 23px;
+        height: 23px;
+      }
+
+      span {
+        color: rgb(0, 0, 0);
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}

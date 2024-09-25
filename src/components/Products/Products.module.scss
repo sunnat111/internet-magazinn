@@ -1,0 +1,186 @@
+.main {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+
+    // @include media(1200)  {
+    //     grid-template-columns: repeat(2,1fr);
+    //     gap: 20px;
+    // }
+    @media (max-width:1200px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    @media (max-width:450px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.item {
+    position: relative;
+    border-radius: 18.21px;
+    padding: 0 15px 15px 30px;
+    margin: 0 30px 0 30px;
+    box-shadow: 18.21px 18.21px 36.43px 0px rgba(211, 209, 216, 0.25);
+    background: rgb(255, 255, 255);
+
+    &_img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    &_title {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        margin: 15px 0;
+    }
+
+    &_text {
+        color: rgb(91, 91, 94);
+        font-size: 14.57px;
+        font-weight: 400;
+        line-height: 20px;
+
+    }
+
+    &_button {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    &_button a {
+        height: 36px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: rgb(254, 114, 76);
+        padding: 8px 16px;
+        font-size: 16px;
+        color: white;
+    }
+
+}
+
+.product {
+
+    &_button {
+        background: rgb(228, 99, 12);
+        position: absolute;
+        right: 410px;
+        top: 35px;
+        transition: all 0.5s;
+    }
+
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:700px) {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &_left {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            &_link {
+                box-shadow: 5px 10px 20px 0px rgba(211, 209, 216, 0.3);
+                background: rgb(255, 255, 255);
+                border-radius: 20px;
+                color: black;
+                padding: 5px 10px;
+            }
+
+            &_text {
+                color: rgb(0, 0, 0);
+                font-size: 36.41px;
+                font-weight: 600;
+
+                @media (max-width:900px) {
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+
+    &_item {
+        position: relative;
+        border-radius: 18.21px;
+        padding: 30px 50px;
+        box-shadow: 18.21px 18.21px 36.43px 0px rgba(211, 209, 216, 0.25);
+        background: rgb(255, 255, 255);
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+
+        @media (max-width:1000px) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+            padding: 15px;
+
+        }
+
+        &_left {
+            max-width: 300px;
+            width: 100%;
+
+            &_img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 25px;
+            }
+
+            &_text {
+                color: rgb(0, 0, 0);
+                font-size: 36.41px;
+                font-weight: 600;
+                margin-top: 10px;
+                text-align: center;
+
+                @media (max-width:700px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &_right {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            width: 100%;
+            gap: 30px;
+
+            h2 {
+                display: flex;
+                gap: 50px;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid gray;
+                padding-bottom: 30px;
+
+                @media (max-width:700px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+}

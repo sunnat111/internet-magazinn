@@ -1,0 +1,195 @@
+.cart {
+    margin-top: 42px;
+
+    &__container {
+        max-width: 560px;
+        margin-left: 65px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    &__center {
+        display: flex;
+        gap: 161px;
+        align-items: center;
+        margin-bottom: 27px;
+        margin-top: 40px;
+
+        &_left {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+
+            &_pic {
+                max-width: 140px;
+                width: 100%;
+                height: 100px;
+                border-radius: 25px;
+                background: rgb(255, 255, 255);
+                box-shadow: 0px 10px 30px 0px rgba(240, 177, 90, 0.2);
+
+                &_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &_text {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            &_name {
+                color: rgb(0, 0, 0);
+                font-size: 18.21px;
+                font-weight: 600;
+            }
+
+            &_span {
+                color: rgb(254, 114, 76);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+            }
+        }
+
+        &_right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &_right {
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+
+            }
+
+            &_delete {
+                background: rgb(255, 255, 255);
+            }
+
+            &_plus {
+                padding: 7px 9px 7px 9px;
+                border-radius: 50%;
+                box-shadow: 0px 7px 15px 0px rgba(254, 114, 76, 0.4);
+                background: rgb(254, 114, 76);
+            }
+
+            &_minus {
+                background: rgb(255, 255, 255);
+                box-sizing: border-box;
+                border: 1px solid rgb(254, 114, 76);
+                border-radius: 50%;
+                padding: 7px 9px 7px 9px;
+                box-shadow: 0px 20px 30px 0px rgb(238, 240, 242);
+            }
+        }
+    }
+
+    &__top {
+        &_title {
+            color: rgb(0, 0, 0);
+            font-size: 36.41px;
+            font-weight: 600;
+        }
+    }
+
+    &__promo {
+        box-sizing: border-box;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 100px;
+        background: rgb(255, 255, 255);
+        padding: 10px 11px 10px 17px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+
+        &_input {
+            border: none;
+            color: rgb(190, 190, 190);
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        &_button {
+            padding: 11px 23px 12px 26px;
+            border-radius: 28.5px;
+            color: #fff;
+            background: rgb(254, 114, 76);
+        }
+
+    }
+
+    &__bottom {
+        margin-top: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        &_button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 28.5px;
+            box-shadow: 0px 10px 30px 0px rgba(254, 114, 76, 0.2);
+            background: rgb(254, 114, 76);
+            margin: 75px 0 0 130px;
+            padding: 19px 60px 16px 60px;
+            max-width: 248px;
+            width: 100%;
+            &_link {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+
+        &_span {
+            color: rgb(190, 190, 190);
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 19px;
+        }
+
+        &_price {
+            color: rgb(0, 0, 0);
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        &_text {
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+
+        &_discount {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(241, 242, 243);
+            padding-bottom: 11px;
+        }
+
+        &_subtotal {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(241, 242, 243);
+            padding-bottom: 11px;
+        }
+
+        &_total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 11px;
+        }
+    }
+}

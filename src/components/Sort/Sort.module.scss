@@ -1,0 +1,25 @@
+.main {
+    &__actions {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        @media (max-width:700px) {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_sort {
+            width: 200px;
+            height: 40px;
+            border: 1px solid rgb(239, 239, 239);
+            border-radius: 10px;
+            background: rgb(252, 252, 253);
+            color: rgb(154, 160, 180);
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

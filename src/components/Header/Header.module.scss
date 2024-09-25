@@ -1,0 +1,44 @@
+.header {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_name {
+            color: rgb(0, 0, 0);
+            font-size: 37px;
+            font-weight: 600;
+        }
+
+        &_right {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+        }
+
+        &_left {
+            display: flex;
+            gap: 15px;
+            border: 1px solid rgb(239, 239, 239);
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 16px 30px 16px 30px;
+
+ 
+
+            &_input {
+                color: rgb(154, 160, 180);
+                font-size: 14px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                border: none;
+                gap: 12px;
+            }
+
+        }
+    }
+
+}
